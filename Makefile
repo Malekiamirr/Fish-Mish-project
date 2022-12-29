@@ -1,8 +1,8 @@
 all : compile link
 
 compile:
-	g++ -Isfml/include -c src/a.cpp
+	g++ -Isfml/include -c src/app.cpp src/Player.cpp
 
 link:
-	g++ a.o -o app -Lsfml/lib -lsfml-graphics -lsfml-window -lsfml-system
+	g++ app.o -o app -Lsfml/lib -lsfml-graphics -lsfml-window -lsfml-system
 	
