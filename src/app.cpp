@@ -1,32 +1,11 @@
 #include "SFML/Graphics.hpp"
 #include <iostream>
-#include "Player.cpp"
-#include "draw.h"
+#include "run.cpp"
 
 int main()
 {
-	Player player;
-	player.setName("Amir Maleki");
-	cout << player.getName() << endl;
-	draw(3);
+	srand(time(0));
+	run();
 
-	return 0;
+	return EXIT_SUCCESS;
 }
-// for (size_t column = 0; column < 8; column++)
-// {
-// 	cout << "-";
-// }
-// cout << endl;
-// for (size_t row = 0; row < 6; row++)
-// {
-// 	cout << "-";
-// 	for (size_t column = 0; column < 4; column++)
-// 	{
-// 		cout << " ";
-// 	}
-// 	cout << "-" << endl;
-// }
-// for (size_t column = 0; column < 8; column++)
-// {
-// 	cout << "-";
-// }
